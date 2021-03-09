@@ -46,8 +46,7 @@ public class PracticeForm extends TestBase {
         $(byText(hobby1)).click();
         $(byText(hobby2)).click();
         $(byText(hobby3)).click();
-        $("#uploadPicture").uploadFromClasspath("img/" + picture);
-        $("#currentAddress").setValue(currentAddress);
+//        $("#currentAddress").setValue(currentAddress);
         $("#state").click();
         $("#stateCity-wrapper").$(byText(state)).click();
         $("#city").click();
