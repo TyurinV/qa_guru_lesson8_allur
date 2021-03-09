@@ -10,13 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static utils.RandomUtils.*;
 
 
-public class PracticeForm {
-
-
-    @BeforeAll
-    static void setup() {
-        Configuration.startMaximized = true;
-    }
+public class PracticeForm extends TestBase {
 
     @Test
     void textFields() {
