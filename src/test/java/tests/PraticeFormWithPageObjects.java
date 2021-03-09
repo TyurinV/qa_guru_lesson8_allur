@@ -14,6 +14,5 @@ public class PraticeFormWithPageObjects {
         registrationPage.fillForm();
         registrationPage.checkData();
 
-
     }
 }
