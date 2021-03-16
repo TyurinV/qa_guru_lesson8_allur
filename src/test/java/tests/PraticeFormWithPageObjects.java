@@ -3,7 +3,7 @@ package tests;
 import pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
 
-public class PraticeFormWithPageObjects {
+public class PraticeFormWithPageObjects extends TestBase{
     RegistrationPage registrationPage;
 
     @Test
