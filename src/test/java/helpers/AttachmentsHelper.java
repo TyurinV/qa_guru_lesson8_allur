@@ -47,7 +47,7 @@ public class AttachmentsHelper {
     }
 
     public static String getConsoleLogs() {
-        return String.join("\n", Selenide.getWebDriverLogs(BROWSER));
+        return attachAsText("\n", Selenide.getWebDriverLogs(BROWSER));
     }
 
 }
