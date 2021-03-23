@@ -25,7 +25,6 @@ public class RegistrationPage {
                 yearOfBirth = getRandomInt(1950, 2000) + "",
                 subject1 = getRandomSubjects(1, 1),
                 subject2 = getRandomSubjects(1, 1),
-                hobby1 = "Sports",
                 hobby2 = "Reading",
                 hobby3 = "Music",
                 picture = "che.png",
@@ -50,7 +49,6 @@ public class RegistrationPage {
             $(".react-datepicker__month-select").selectOption(monthOfBirth);
             $(".react-datepicker__day--0" + dayOfBirth).click();
             $("#subjectsInput").setValue(subject1).pressEnter().setValue(subject2).pressEnter();
-            $(byText(hobby1)).click();
             $(byText(hobby2)).click();
             $(byText(hobby3)).click();
             $("#uploadPicture").uploadFromClasspath("img/" + picture);
@@ -71,7 +69,7 @@ public class RegistrationPage {
             $x("//td[text()='Mobile']").parent().shouldHave(text(mobile));
             $x("//td[text()='Date of Birth']").parent().shouldHave(text(dayOfBirth + " " + monthOfBirth + "," + yearOfBirth));
             $x("//td[text()='Subjects']").parent().shouldHave(text(subject1 + ", " + subject2));
-            $x("//td[text()='Hobbies']").parent().shouldHave(text(hobby1 + ", " + hobby2 + ", " + hobby3));
+            $x("//td[text()='Hobbies']").parent().shouldHave(text(hobby2 + ", " + hobby3));
             $x("//td[text()='Picture']").parent().shouldHave(text(picture));
             $x("//td[text()='Address']").parent().shouldHave(text(currentAddress));
             $x("//td[text()='State and City']").parent().shouldHave(text(state + " " + city));
