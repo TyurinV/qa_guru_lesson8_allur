@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 import static utils.RandomUtils.*;
 
 
-public class PracticeFormWithSteps extends TestBase{
+public class PracticeFormWithSteps {
 
 
     @BeforeAll
