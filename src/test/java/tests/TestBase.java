@@ -33,7 +33,7 @@ public class TestBase {
     public void afterEach() {
         attachScreenshot("Last screenshot");
         attachPageSource();
-        //attachAsText("Browser console logs", getConsoleLogs());
+        attachAsText("Browser console logs", getConsoleLogs());
         attachVideo();
         closeWebDriver();
     }
