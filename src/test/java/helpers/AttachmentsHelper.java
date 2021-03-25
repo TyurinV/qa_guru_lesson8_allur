@@ -10,7 +10,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
-import static com.codeborne.selenide.Browsers.CHROME;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
@@ -48,7 +47,7 @@ public class AttachmentsHelper {
     }
 
     public static String getConsoleLogs() {
-        return String.join("\n", Selenide.getWebDriverLogs(CHROME));
+        return String.join("\n", Selenide.getWebDriverLogs(BROWSER));
     }
 
 }
